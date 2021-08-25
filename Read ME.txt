@@ -1,0 +1,9 @@
+
+1.	Open  command prompt install libraries
+2.	Django== pip install django
+3.	Pylit== pip install pylint
+4.	Joblib== pip intall joblib
+	pandas,sklearn,matplotlib
+5.	Open vs code and open folder mysite-copy
+6.	Open terminal from vs code.
+7.	Type python manage.py run server

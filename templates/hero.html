@@ -1,0 +1,84 @@
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body style="background-color:#ffbcfb;">
+        <CENTER>
+        <h1>  USED BIKES PRICE PREDICTION SYSTEM </h1>
+    </CENTER>
+       
+    
+        <head>
+            <style>
+            table {
+              width:60%;
+            }
+            table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+            }
+            th, td {
+              padding: 15px;
+              text-align: left;
+            }
+            #t01 tr:nth-child(even) {
+              background-color: #eee;
+            }
+            #t01 tr:nth-child(odd) {
+             background-color: #fff;
+            }
+            #t01 th {
+              background-color: black;
+              color: white;
+            }
+            </style>
+            </head>
+            <body>
+                <center>
+                <center>
+                    <h1> HERO - 9 </h1>
+                </center>
+            <table id="t01">
+            <thead><tr><th title="Field #1">Bike_ Model</th>
+            <th title="Field #2">CODE</th>
+            </tr></thead>
+            <tbody><tr>
+            <td>Passion</td>
+            <td align="right">156</td>
+            </tr>
+            <tr>
+            <td>Glamour</td>
+            <td align="right">93</td>
+            </tr>
+            <tr>
+            <td>Delux</td>
+            <td align="right">53</td>
+            </tr>
+            <tr>
+            <td>Xtreme</td>
+            <td align="right">231</td>
+            </tr>
+            <tr>
+            <td>Pulse</td>
+            <td align="right">169</td>
+            </tr>
+            <tr>
+            <td>Thunder</td>
+            <td align="right">201</td>
+            </tr>
+            <tr>
+            <td>Destini</td>
+            <td align="right">55</td>
+            </tr>
+            </tbody></table>
+            <br>
+            <br>
+            <center>
+                <form action="{% url 'form' %}" class="container">
+                    <input type="submit"name=" "value="Click Here Predict The Price">   
+                    </form>
+            </center>
+        </center>
+            </body>
+            </html>

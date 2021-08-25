@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            a:link {
+              color: #040352;
+              background-color: transparent;
+              text-decoration: none;
+            }
+            a:visited {
+              color: r#db0c16;
+              background-color: transparent;
+              text-decoration: none;
+            }
+            a:hover {
+              color: #fa0b2b;
+              background-color: transparent;
+              text-decoration: underline;
+            }
+            a:active {
+              color: yellow;
+              background-color: transparent;
+              text-decoration: underline;
+            }
+            </style>
+        <meta charset="utf-8" />
+        <title>Bikes</title>
+        {% load static %}
+        <link rel="stylesheet" href="{%static 'css/style1.css' %}" type="text/css" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="style1.css" type="text/css" rel="stylesheet"> -->
+    </head>
+    <body>
+        <div> <h1>Bikes avialable</h1>
+            <ul>
+                <b><li><a href="{% url 'bajaj' %}" target="_blank" class="bj">BAJAJ</a></li></b>
+                <b><li><a href="{% url 'tvs' %}" target="_blank" class="tv">TVS</a></li></b>
+                <b> <li><a href="{% url 'hero' %}" target="_blank" class="he">HERO</a></li></b>
+                <b><li><a href="{% url 'honda' %}" target="_blank" class="ho">HONDA</a></li></b>
+                <b> <li><a href="{% url 'suzuki' %}" target="_blank" class="suz">SUZUKI</a></li></b>
+                <b> <li><a href="{% url 'royalenfield' %}" target="_blank" class="re">ROYAL ENFIELD</a></li></b>
+                <b> <li><a href="{% url 'yamaha' %}" target="_blank" class="ym">YAMAHA</a></li></b>
+                <!-- <b><li><a href="{% url 'mahindra' %}" target="_blank" class="mh">MAHINDRA</a></li></b>   -->
+            </ul>
+        </div>
+    </body>
+    </html>
+

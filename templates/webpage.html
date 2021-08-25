@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Bikeprice prediction</title>
+        {% load static %}
+        <link rel="stylesheet" href="{%static 'css/style.css' %}" type="text/css" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="{% static 'css/style.css' %}"> -->
+    </head>
+    <body>
+        <style> h1{color:rgba(81, 194, 15, 0.747);,font-family:"timesroman";}</style>
+    
+        <nav id="main-navigation">
+            <div>BIKE_PRICE_PREDICTION_SYSTEM </div>
+            <ul>
+
+                <li><a href="{% url 'bikes' %}">Bikes </a></li>
+                <li><a href="{% url 'contact' %}">Contact </a></li>
+                <li><a href="{% url 'aboutus' %}"target="_blank">About Us</a></li>
+            </ul>    
+        </nav>  
+    </body>
+</html>

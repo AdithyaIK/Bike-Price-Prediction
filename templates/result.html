@@ -1,0 +1,19 @@
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <center>
+    <body style="background-color:#c4ddfe;">
+        <h1> Price Prediction System </h1>
+        <h1> The Data Of Your Bike Is : {{lis}}</h3>
+        <h1> The Predicted Price Of The Bike Is - {{ans}} ₹</h3>
+        <!-- this is my home page {{ans}} -->
+
+        <form action="{% url 'bikes' %}" class="container">
+            <input type="submit"name=" "value="Find the Price Of Another Bike">
+            </form>
+        <!-- <a href="{% url 'bikes' %}">Find the Price Of Another Bike</a> -->
+    </body>
+</center>
+    </html>

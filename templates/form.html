@@ -1,0 +1,404 @@
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <center>
+      <body style="background-color:#ffbcfb;">
+        <h1> Fill The Details Of the Bike With Respect To The Given CODES To Predict the Price </h1>
+        
+        
+
+        <form action="{% url 'result' %}" class="container">
+           
+            <h2>Bike_company  <BR>    <input type="text" required name="Bike_company"></h2>
+            <h2>Bike_model      <BR>  <input type="text" required name="Bike_model"></h2>
+              <h2>Manufactured_year<BR> <input type="text" required name="Manufactured_year"></h2>
+                <h2>Engine_warranty<BR>  <input type="text" required name="Engine_warranty"></h2>
+                  <h2>Engine_type	  <BR>   <input type="text" required name="Engine_type"></h2>
+                    <h2>Fuel_type  <BR>      <input type="text" required name="Fuel_type"></h2>
+                      <h2>CC(Cubic capacity)<BR><input type="text" required name="CC(Cubic capacity)"></h2>
+          <!-- Ba:<input type="text" required name="Ba"><br><br>
+          Fe:<input type="text" required name="Fe"><br><br> -->
+
+         <h2><input type="submit"name=" "value="Predict The Price"> </h2> 
+          
+         
+          
+        </form>
+        <BR>
+          <BR>
+
+        <h2> REFER BELOW TABLE FOR CC VALUES AND ENGINE TYPE</H2>
+        <br>
+        <br>
+        <center><h1>CUBIC CAPACITY</h1></center>
+        <head>
+            <style>
+            table {
+              width:60%;
+            }
+            table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+            }
+            th, td {
+              padding: 15px;
+              text-align: left;
+            }
+            #t01 tr:nth-child(even) {
+              background-color: #eee;
+            }
+            #t01 tr:nth-child(odd) {
+             background-color: #fff;
+            }
+            #t01 th {
+              background-color: black;
+              color: white;
+            }
+            </style>
+            </head>
+
+            <center>
+            <body>
+              
+            <table id="t01">
+              <thead><tr><th title="Field #1">cubic_capacity</th>
+            <th title="Field #2">Code</th>
+            </tr></thead>
+            <tbody><tr>
+            <td>220CC  </td>
+            <td align="right">30</td>
+            </tr>
+            <tr>
+            <td>120CC </td>
+            <td align="right">6</td>
+            </tr>
+            <tr>
+            <td>140CC</td>
+            <td align="right">14</td>
+            </tr>
+            <tr>
+            <td>150CC </td>
+            <td align="right">16</td>
+            </tr>
+            <tr>
+            <td>350CC</td>
+            <td align="right">41</td>
+            </tr>
+            <tr>
+            <td>300CC</td>
+            <td align="right">38</td>
+            </tr>
+            <tr>
+            <td>100CC</td>
+            <td align="right">1</td>
+            </tr>
+            <tr>
+            <td>170CC</td>
+            <td align="right">20</td>
+            </tr>
+            <tr>
+            <td>320CC </td>
+            <td align="right">39</td>
+            </tr>
+            <tr>
+            <td>420CC </td>
+            <td align="right">48</td>
+            </tr>
+            <tr>
+            <td>130CC</td>
+            <td align="right">10</td>
+            </tr>
+            <tr>
+            <td>125CC</td>
+            <td align="right">9</td>
+            </tr>
+            <tr>
+            <td>155CC</td>
+            <td align="right">17</td>
+            </tr>
+            <tr>
+            <td>175CC</td>
+            <td align="right">21</td>
+            </tr>
+            <tr>
+            <td>250CC</td>
+            <td align="right">35</td>
+            </tr>
+            <tr>
+            <td>360CC</td>
+            <td align="right">42</td>
+            </tr>
+            <tr>
+            <td>400CC</td>
+            <td align="right">46</td>
+            </tr>
+            <tr>
+            <td>469CC</td>
+            <td align="right">52</td>
+            </tr>
+            <tr>
+            <td>500CC</td>
+            <td align="right">53</td>
+            </tr>
+            <tr>
+            <td>550CC </td>
+            <td align="right">56</td>
+            </tr>
+            <tr>
+            <td>45CC</td>
+            <td align="right">15</td>
+            </tr>
+            <tr>
+            <td>135CC </td>
+            <td align="right">13</td>
+            </tr>
+            <tr>
+            <td>450CC</td>
+            <td align="right">51</td>
+            </tr>
+            <tr>
+            <td>525CC</td>
+            <td align="right">55</td>
+            </tr>
+            <tr>
+            <td>895CC</td>
+            <td align="right">67</td>
+            </tr>
+            <tr>
+            <td>990CC</td>
+            <td align="right">72</td>
+            </tr>
+            <tr>
+            <td>1025CC</td>
+            <td align="right">2</td>
+            </tr>
+            <tr>
+            <td>1225CC</td>
+            <td align="right">7</td>
+            </tr>
+            <tr>
+            <td>649CC</td>
+            <td align="right">60</td>
+            </tr>
+            <tr>
+            <td>729CC </td>
+            <td align="right">64</td>
+            </tr>
+            <tr>
+            <td>899CC </td>
+            <td align="right">68</td>
+            </tr>
+            <tr>
+            <td>917CC </td>
+            <td align="right">70</td>
+            </tr>
+            <tr>
+            <td>210CC </td>
+            <td align="right">29</td>
+            </tr>
+            <tr>
+            <td>275CC </td>
+            <td align="right">37</td>
+            </tr>
+            <tr>
+            <td>390CC</td>
+            <td align="right">45</td>
+            </tr>
+            <tr>
+            <td>190CC </td>
+            <td align="right">25</td>
+            </tr>
+            <tr>
+            <td>200CC</td>
+            <td align="right">27</td>
+            </tr>
+            <tr>
+            <td>10CC</td>
+            <td align="right">3</td>
+            </tr>
+            <tr>
+            <td>160CC </td>
+            <td align="right">18</td>
+            </tr>
+            <tr>
+            <td>340CC</td>
+            <td align="right">40</td>
+            </tr>
+            <tr>
+            <td>380CC</td>
+            <td align="right">44</td>
+            </tr>
+            <tr>
+            <td>590CC</td>
+            <td align="right">58</td>
+            </tr>
+            <tr>
+            <td>650CC </td>
+            <td align="right">61</td>
+            </tr>
+            <tr>
+            <td>700CC</td>
+            <td align="right">63</td>
+            </tr>
+            <tr>
+            <td>890CC</td>
+            <td align="right">66</td>
+            </tr>
+            <tr>
+            <td>900CC </td>
+            <td align="right">69</td>
+            </tr>
+            <tr>
+            <td>560CC </td>
+            <td align="right">57</td>
+            </tr>
+            <tr>
+            <td>134CC </td>
+            <td align="right">11</td>
+            </tr>
+            <tr>
+            <td>167CC</td>
+            <td align="right">19</td>
+            </tr>
+            <tr>
+            <td>176CC</td>
+            <td align="right">22</td>
+            </tr>
+            <tr>
+            <td>1350CC  </td>
+            <td align="right">12</td>
+            </tr>
+            <tr>
+            <td>270CC </td>
+            <td align="right">36</td>
+            </tr>
+            <tr>
+            <td>425CC </td>
+            <td align="right">49</td>
+            </tr>
+            <tr>
+            <td>440CC </td>
+            <td align="right">50</td>
+            </tr>
+            <tr>
+            <td>240CC</td>
+            <td align="right">34</td>
+            </tr>
+            <tr>
+            <td>370CC</td>
+            <td align="right">43</td>
+            </tr>
+            <tr>
+            <td>520CC</td>
+            <td align="right">54</td>
+            </tr>
+            <tr>
+            <td>195CC </td>
+            <td align="right">26</td>
+            </tr>
+            <tr>
+            <td>409CC</td>
+            <td align="right">47</td>
+            </tr>
+            <tr>
+            <td>110CC </td>
+            <td align="right">4</td>
+            </tr>
+            <tr>
+            <td>185CC</td>
+            <td align="right">24</td>
+            </tr>
+            <tr>
+            <td>225CC</td>
+            <td align="right">31</td>
+            </tr>
+            <tr>
+            <td>180CC</td>
+            <td align="right">23</td>
+            </tr>
+            <tr>
+            <td>750CC</td>
+            <td align="right">65</td>
+            </tr>
+            <tr>
+            <td>600CC </td>
+            <td align="right">59</td>
+            </tr>
+            <tr>
+            <td>979CC</td>
+            <td align="right">71</td>
+            </tr>
+            <tr>
+            <td>1000CC</td>
+            <td align="right">0</td>
+            </tr>
+            <tr>
+            <td>679CC </td>
+            <td align="right">62</td>
+            </tr>
+            <tr>
+            <td>1200CC </td>
+            <td align="right">5</td>
+            </tr>
+            <tr>
+            <td>1250CC</td>
+            <td align="right">8</td>
+            </tr>
+            <tr>
+            <td>1250CC</td>
+            <td align="right">32</td>
+            </tr>
+            <tr>
+            <td>230CC  </td>
+            <td align="right">28</td>
+            </tr>
+            <tr>
+            <td>205CC</td>
+            <td align="right">33</td>
+            </tr>
+            </tbody></table>
+            
+            </body>
+            <H1> ENGINE TYPE</H1>
+
+            <body>
+
+
+                <table id="t01">
+                  <thead><tr><th title="Field #1">Engine_type</th>
+                <th title="Field #2">Code</th>
+                </tr></thead>
+                <tbody><tr>
+                <td>Single</td>
+                <td align="right">3</td>
+                </tr>
+                <tr>
+                <td>V-twin</td>
+                <td align="right">5</td>
+                </tr>
+                <tr>
+                <td>Boxer</td>
+                <td align="right">0</td>
+                </tr>
+                <tr>
+                <td>Two-Stroke</td>
+                <td align="right">4</td>
+                </tr>
+                <tr>
+                <td>Dual Stroke</td>
+                <td align="right">1</td>
+                </tr>
+                <tr>
+                <td>Oxidiser-Air inlet</td>
+                <td align="right">2</td>
+                </tr>
+                </tbody></table>
+              
+                </body>
+              
+              </center>
+  </body> 
+</center>  
+</html>
